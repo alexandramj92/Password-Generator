@@ -1,0 +1,21 @@
+.container{
+    margin-top: 50px;
+    padding: 30px;
+    width: 100%
+}
+
+
+
+
+
+textarea{
+    width: 100%;
+    border: 2px dashed #8c9096;
+    height: 200px;
+}
+
+
+#slider{
+    width: 100%;
+}
+
