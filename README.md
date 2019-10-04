@@ -10,7 +10,7 @@ Additionally, the user can select the length of the password within the range of
 
 Once the user makes their selections, they are able to click the Generate Password Button and the password will appear in the text area. They can then copy the password to their clipboard. 
 
-You can test out the full application[here](https://alexandramj92.github.io/Unit-03-AlexandraJackson/)
+You can test out the full application [here](https://alexandramj92.github.io/Unit-03-AlexandraJackson/)
 
 
 ## Installation
