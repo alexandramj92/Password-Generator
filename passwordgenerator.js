@@ -136,10 +136,9 @@ document.getElementById("slider").oninput = function(){
 //function to copy password to clipboard
 
 function copyPassword(){
-
-    document.getElementById("display").select();
-    
-
+    display = document.getElementById("display");
+    display.select();
+    display.setSelectionRange(0, 99999);//selection range
     document.execCommand("Copy");
 
 }
@@ -167,5 +166,8 @@ generateBtn.addEventListener("click", function copytoClipboardTxt(){
 }
 
 );
+
+
+         
 
 
