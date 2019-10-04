@@ -23,40 +23,58 @@
 
           <textarea readonly id="display" placeholder="Your Secure Password"></textarea>
           <br/>  
+          <br/>
 
           <!-- Password length input -->
-
           <input type="range" min="8" max="128" name="slider" id="slider">
+          
+          
           <div id="length"></div>
           <br/>
+          
 
             <!-- Checkboxes -->
 
             <div class="form-check form-check-inline">
-                <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1" onclick="checkSpecialChar()">
-                <label class="form-check-label" for="inlineCheckbox1" id="specialCharacters">Special Characters</label>
-              </div>
+            <label class="checkbox-label">
+                <input type="checkbox" id="inlineCheckbox1" value="option1" onclick="checkSpecialChar()">
+                <span class="checkbox-custom"></span>
+            </label>
+            <p>Special Characters</p>
+          </div>
+
 
               <br/>
 
               <div class="form-check form-check-inline">
-                <input class="form-check-input" type="checkbox" id="inlineCheckbox2" value="option2" onclick="checkNumericChar()">
-                <label class="form-check-label" for="inlineCheckbox2" id="numericCharacters">Numeric Characters</label>
-              </div>
-
-              <br/>
-
-              <div class="form-check form-check-inline">
-                <input class="form-check-input" type="checkbox" id="inlineCheckbox3" value="option3" onclick="checkLowerChar()">
-                <label class="form-check-label" for="inlineCheckbox3" id="lowercaseCharacters">Lowecase Characters</label>
-              </div>
-
-              <br/>
-
-              <div class="form-check form-check-inline">
-                  <input class="form-check-input" type="checkbox" id="inlineCheckbox4" value="option4" onclick="checkUpperChar()">
-                  <label class="form-check-label" for="inlineCheckbox4" id="uppercaseCharacters">Uppercase Characters</label>
+                  <label class="checkbox-label">
+                      <input type="checkbox" id="inlineCheckbox2" value="option2" onclick="checkNumericChar()">
+                      <span class="checkbox-custom"></span>
+                  </label>
+                  <p>Numeric Characters</p>
                 </div>
+
+              <br/>
+
+
+              <div class="form-check form-check-inline">
+                  <label class="checkbox-label">
+                      <input type="checkbox" id="inlineCheckbox3" value="option3" onclick="checkLowerChar()">
+                      <span class="checkbox-custom"></span>
+                  </label>
+                  <p>Lowercase Characters</p>
+                </div>
+
+              <br/>
+
+            
+                <div class="form-check form-check-inline">
+                    <label class="checkbox-label">
+                        <input type="checkbox" id="inlineCheckbox4" value="option4" onclick="checkUpperChar()">
+                        <span class="checkbox-custom"></span>
+                    </label>
+                    <p>Uppercase Characters</p>
+                  </div>
 
               <br/>
 
@@ -82,10 +100,10 @@
      
     
   
-<!-- 
+
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script> -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
     <script type="text/javascript" src="passwordgenerator.js"></script>
 
   </body>

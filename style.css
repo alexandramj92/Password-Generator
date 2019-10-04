@@ -1,11 +1,8 @@
 .container{
     margin-top: 50px;
     padding: 30px;
-    width: 100%
+    width: 70%;
 }
-
-
-
 
 
 textarea{
@@ -14,8 +11,103 @@ textarea{
     height: 200px;
 }
 
-
 #slider{
-    width: 100%;
+    width: 100%!important;
 }
 
+.range-num{
+    color: red!important;
+}
+
+
+.btn{
+    border-radius: 1.4rem;
+}
+
+
+
+/* Additional checkbox styling */
+.checkbox-label{
+    display:block;
+    position: relative;
+    margin: auto;
+    cursor: pointer;
+    font-size: 20px;
+    line-height: 24px;
+    height: 20px;
+    width: 20px;
+    clear: both;
+}
+
+
+/* Hides defaulf checkbox */
+.checkbox-label input{
+    position: absolute;
+    opacity: 0;
+    cursor: pointer!important;
+}
+
+p{
+    margin-left: 10px;
+    margin-top: 15px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+/* Styling for unchecked state */
+
+.checkbox-label .checkbox-custom{
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    height: 20px;
+    width: 20px;
+    background-color: transparent;
+    border-radius: 5px;
+    border: 2px solid red;
+}
+
+.checkbox-label .checkbox-custom::after{
+
+    position: absolute;
+    content: "";
+    left: 12px;
+    top: 12px;
+    height: 0px;
+    width: 0px;
+    border-radius: 5px;
+    border: solid red;
+    border-width: 0 3px 3px 0;
+    -webkit-transform: rotate(0deg) scale(0);
+    -ms-tranform: rotate(0deg) scale(0);
+    transform: rotate(0deg) scale(0);
+    opacity: 1;
+} 
+
+/* Styling for checked state */
+
+.checkbox-label input:checked ~ .checkbox-custom{
+    background-color: rgb(0,0,0,.5);
+    border-radius: 5px;
+    -webkit-transform: rotate(0deg) scale(1);
+    -ms-transform: rotate(0deg) scale(1);
+    transform: rotate(0deg) scale(1);
+    opacity: 1;
+    border: 2px solid red;
+}
+
+
+.checkbox-label input:checked ~ .checkbox-custom::after{
+    -webkit-transform: rotate(45deg) scale(1);
+    -ms-transform: rotate(45deg) scale(1);
+    transform: rotate(45deg) scale(1);
+    opacity: 1;
+    left: 5px;
+    top: 2px;
+    width: 6px;
+    height: 10px;
+    border: solid black;
+    border-width: 0 2px 2px 0;
+    background-color: transparent;
+    border-radius: 0;
+}
