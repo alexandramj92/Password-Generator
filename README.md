@@ -1,75 +1,54 @@
-# Unit-03-AlexandraJackson
-
-
+# Unit 3 Homework - Alexandra Jackson
 
 ## Description
 
+The purpose of this application is to generate a secure password. 
 
+The user can select from four different character types: Special, Numeric, Lowercase, and Uppercase. 
+
+Additionally, the user can select the length of the password within the range of 8 to 128. 
+
+Once the user makes their selections, they are able to click the Generate Password Button and the password will appear in the text area. They can then copy the password to their clipboard. 
 
 ## Installation
 
+Visual Studio Code needs to be installed in order to make modifications.
+I used GitHub to store my files online and create the sharable link. 
 
 ## Usage
 
-The display shows an empty textarea with two buttons underneath. One button is labeled "Generate Password" and the other is labeled "Copy to Clipboard". 
+On larger screens, the application will appear as follows. 
 
-When the user clicks on the "Generate Password" button, a prompt appears asking the user the length of the password. They must enter a number between 8 and 128. A second prompt appears asking the user if they would like to use Special Characters, then if they would like to use numeric characters, then if they would like to use lowercase characters, and finally if they would like to use uppercase characters. 
+![Alt text](images/large-screen.JPG)
 
-The user will be required to use at least one character type. 
+On smaller screens, the application is designed to be responsive with the use of some media queries. It should look something like the example below. 
 
-Once this criteria is recorded. The password is generated and displayed in the text area. 
-
-The user can then click on the "Copy to Clipboard" button to copy the password that appeared in the text area. 
-
-The html is linked to bootstrap and a custom css stylesheet in order to ensure the application is responsive at different sizes. 
+![Alt text](images/small-screen-size.JPG)
 
 
-Elements needed:
-
-A variable that stores the user's desired password length. It can only accept a number between 8 and 128.
- 
-An array of all the special characters.
-
-An array of all the numeric characters.
-
-An array of all lowecase characters. 
-
-An array of all Uppercase characters.
-
-A variable that stores the user's desired character type(s). 
-
-A for loop that will randomly select a combination of Character types depending on the user's selection. 
-
-Once the random combination of characters is generated according to the user's selected length, it will display in the html text area
+The user makes the character type selection using checkboxes. Below you can see an example of all the checkboxes selected. This will generate a password with all character types.
 
 
-Different scenarios:
+![Alt text](images/all-selected.JPG)
 
-User chooses all four character types. 
+Here is an example of when only some of the character types are selected. You can change your mind as many times as you would like. Just make new character type selections and click on the generate password button to genearate a new password with the changes you made. 
 
-User just chooses special characters.
+![Alt text](images/some-selected.JPG)
 
-User just chooses numeric characters.
+Below shows how the length selector works. It is a slider input. All you have to do is click on the circle and move it left or right. You can see how the length changes in the length field under the slider. The range is limited between 8 and 128 characters. 
 
-User just chooses lowercase characters. 
-
-user just chooses uppercase characters. 
+![Alt text](images/slider.JPG)
 
 
-User chooses any combination of the above. 
+I used an event listener to change the text of the "Copy to Clipboard" button to "Successfully Copied!" when clicked. Additionally, I had to add another event listener to change it back to "Copy to Clipboard" when the "Generate Password" button is clicked so that the copied notification works even if you are generating multiple passwords. 
 
 
+![Alt text](images/successfully-copied.JPG)
 
 
-
-
-
-
-
-
-
-## Tests
 
 
 
 ## Credits
+
+I would like to thank Omar for giving me the knowledge to create this password generator using html ,bootstrap, css, and javascript and the TAs for helping me work through some the issues I had with my code. 
