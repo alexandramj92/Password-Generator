@@ -184,3 +184,26 @@ p{
     background-color: transparent;
     border-radius: 0;
 }
+
+
+/* media queries start here */
+
+@media only screen 
+and (min-width : 375px) 
+and (max-width : 667px) {
+    h1{
+        font-size: 30px;
+    }
+
+    h2{
+        font-size: 25px;
+        text-align: left;
+    }
+
+    .container{
+        padding: 5px;
+        padding-bottom: 10px;
+    }
+
+
+}
