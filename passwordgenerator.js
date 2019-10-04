@@ -144,3 +144,28 @@ function copyPassword(){
 
 }
 
+// Change Copy to Clipboard to Copied
+
+var copyBtn = document.getElementById("copy");
+
+copyBtn.addEventListener("click", function copiedText() {
+
+    textChange = "Successfully Copied";
+    
+    copyBtn.textContent = textChange + "!";
+});
+
+// Change Copied back to Copy to Clipboard 
+
+
+var generateBtn = document.getElementById("generate");
+
+generateBtn.addEventListener("click", function copytoClipboardTxt(){
+        textChangeBck = "Copy to Clipboard"
+        copyBtn.textContent = textChangeBck;
+
+}
+
+);
+
+
