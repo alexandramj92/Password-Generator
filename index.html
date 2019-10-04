@@ -10,8 +10,8 @@
   </head>
   <body>
 
-      <nav class="navbar navbar-light bg-light">
-          <span class="navbar-brand mb-0 h1"> <h1>Password Generator</h1></span>
+      <nav class="navbar">
+          <span class="navbar-brand nav-justified mb-0 h1"> <h1>Password Generator</h1></span>
       </nav>
     
     <div class="container">
@@ -30,7 +30,6 @@
           
           
           <div id="length"></div>
-          <br/>
           
 
             <!-- Checkboxes -->
@@ -42,9 +41,9 @@
             </label>
             <p>Special Characters</p>
           </div>
+        </br>
 
 
-              <br/>
 
               <div class="form-check form-check-inline">
                   <label class="checkbox-label">
@@ -54,7 +53,7 @@
                   <p>Numeric Characters</p>
                 </div>
 
-              <br/>
+        </br>
 
 
               <div class="form-check form-check-inline">
@@ -65,7 +64,7 @@
                   <p>Lowercase Characters</p>
                 </div>
 
-              <br/>
+        </br>
 
             
                 <div class="form-check form-check-inline">
@@ -76,11 +75,11 @@
                     <p>Uppercase Characters</p>
                   </div>
 
-              <br/>
+          <br/>
 
               <!-- Generate Password Button -->
 
-            <button class="btn btn-danger rounded-pill mt-4" id="generate" class="btn btn-secondary rounded-pill mt-4" onclick="generatePassword()">
+            <button class="btn rounded-pill mt-4" id="generate" class="btn btn-secondary rounded-pill mt-4" onclick="generatePassword()">
              Generate Password
             </button>
 
