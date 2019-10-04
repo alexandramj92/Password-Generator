@@ -205,6 +205,10 @@ and (max-width : 667px) {
         padding-bottom: 10px;
     }
 
+    textarea{
+        height: 200px;
+    }
+
 
 }
 
@@ -225,6 +229,10 @@ and (orientation : portrait) {
     .container{
         padding: 5px;
         padding-bottom: 10px;
+    }
+
+    textarea{
+        height: 200px;
     }
 
 
