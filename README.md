@@ -1,5 +1,4 @@
-# Unit 3 Homework - Alexandra Jackson
-
+# Password Generator
 ## Description
 
 The purpose of this application is to generate a secure password. 
